@@ -45,7 +45,7 @@ Example (Cloud DNS / Route53 / other panels):
 
 5) Quick verification after Pages publishes
 
-- Visit: https://legal.gymbody.com (or https://gymbody.github.io/gymbody-policies/terms.html until DNS is propagated)
+- Visit: https://legal.gymbody.com (or https://github.com/gymbody/gymbody-policies/blob/main/terms.html until DNS is propagated)
 - Check TLS: `curl -I https://legal.gymbody.com` should return HTTP 200 and valid cert information.
 
 6) Additional options

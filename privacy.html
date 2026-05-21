@@ -28,7 +28,7 @@
   <div class="container">
     <div class="legal-page">
       <h1>Privacy Policy</h1>
-      <p class="text-secondary mb-4">Last updated: May 20, 2026</p>
+      <p class="text-secondary mb-4">Last updated: May 21, 2026</p>
 
       <section>
         <h2>1. Information We Collect</h2>
@@ -82,7 +82,7 @@
           <li>Through shareable game links, limited game details (such as game type, time, park, and participant counts) may be viewable by anyone who has the link</li>
           <li>When required by law or legal process</li>
         </ul>
-        <p>Please review our <a href="/safety">Community Safety &amp; Public Availability Guidelines</a> for best practices when meeting new people through the App.</p>
+        <p>Please review our <a href="https://gymbody.github.io/gymbody-policies/safety.html">Community Safety &amp; Public Availability Guidelines</a> for best practices when meeting new people through the App.</p>
       </section>
 
       <section>
@@ -109,6 +109,15 @@
       <section>
         <h2>9. Children's Privacy</h2>
         <p>The App is not intended for users under 18 years of age. We do not knowingly collect personal information from anyone under 18. If we discover such data has been collected, it will be promptly deleted.</p>
+      </section>
+
+      <section>
+        <h2>Push Notifications &amp; Local Notification Storage</h2>
+        <p>We use push notifications to keep you informed about match requests, game updates, and messages. To deliver push notifications we rely on Expo's push service and the <code>expo-notifications</code> library in the mobile app.</p>
+
+        <p>We store a user's Expo push token (stored as <em>expoPushToken</em> on the user's profile) on our backend exclusively for the purpose of delivering push messages. Notification message content is not persisted in our server database by default; instead the mobile app stores received notifications locally in-device in an in-app memory store for display and badge calculations. The mobile client uses a local state store (`useNotificationStore`) to manage notifications and may persist minimal seen/unread state to device storage (for example, via `AsyncStorage`) so unread counts survive app restarts.</p>
+
+        <p>If you do not wish to receive push notifications, you can disable them via your device settings or revoke notification permissions in the app. To stop server-side delivery for your account, remove the push token in Settings or contact support@aigymbody.com.</p>
       </section>
 
       <section>
